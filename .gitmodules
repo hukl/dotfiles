@@ -1,0 +1,35 @@
+# Core
+[submodule ".vim/bundle/pathogen"]
+        path = .vim/bundle/pathogen
+        url = https://github.com/tpope/vim-pathogen.git
+
+
+[submodule ".vim/bundle/ctrlp.vim"]
+        path = .vim/bundle/ctrlp.vim
+        url = https://github.com/kien/ctrlp.vim.git
+
+[submodule ".vim/bundle/ack.vim"]
+        path = .vim/bundle/ack.vim
+        url = https://github.com/mileszs/ack.vim.git
+
+[submodule ".vim/bundle/delimitMate"]
+        path = .vim/bundle/delimitMate
+        url = https://github.com/Raimondi/delimitMate.git
+
+[submodule ".vim/bundle/nerdcommenter"]
+        path = .vim/bundle/nerdcommenter
+        url = https://github.com/scrooloose/nerdcommenter.git
+
+[submodule ".vim/bundle/nerdtree"]
+        path = .vim/bundle/nerdtree
+        url = https://github.com/scrooloose/nerdtree.git
+
+[submodule ".vim/bundle/supertab"]
+        path = .vim/bundle/supertab
+        url = https://github.com/ervandew/supertab.git
+
+[submodule ".vim/bundle/vimerl"]
+        path = .vim/bundle/vimerl
+        url = .vim/bundle/vimerl
+
+
