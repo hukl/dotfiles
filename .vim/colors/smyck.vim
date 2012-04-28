@@ -25,6 +25,8 @@ hi IncSearch            cterm=none ctermbg=3        ctermfg=8       gui=none    
 hi ColumnMargin         cterm=none ctermbg=0                        gui=none        guibg=#000000
 hi Error                cterm=none ctermbg=1        ctermfg=15      gui=none                        guifg=#F7F7F7
 hi ErrorMsg             cterm=none ctermbg=1        ctermfg=15      gui=none                        guifg=#F7F7F7
+hi Folded               cterm=none ctermbg=8        ctermfg=2       gui=none        guibg=#8F8F8F   guifg=#C4E858
+hi FoldColumn           cterm=none ctermbg=8        ctermfg=2       gui=none        guibg=#8F8F8F   guifg=#C4E858
 hi NonText              cterm=bold ctermbg=none     ctermfg=8       gui=bold                        guifg=#8F8F8F
 hi ModeMsg              cterm=bold ctermbg=none     ctermfg=10      gui=none
 hi Pmenu                cterm=none ctermbg=8        ctermfg=15      gui=none        guibg=#8F8F8F   guifg=#F7F7F7
@@ -37,6 +39,10 @@ hi SpellLocal           cterm=none ctermbg=4        ctermfg=15      gui=none    
 hi Visual               cterm=none ctermbg=15       ctermfg=8       gui=none        guibg=#F7F7F7   guifg=#8F8F8F
 hi Directory            cterm=none ctermbg=none     ctermfg=4       gui=none
 hi SpecialKey           cterm=none ctermbg=none     ctermfg=8       gui=none                        guifg=#8F8F8F
+hi DiffAdd              cterm=bold ctermbg=2        ctermfg=15
+hi DiffChange           cterm=bold ctermbg=4        ctermfg=15
+hi DiffDelete           cterm=bold ctermbg=1        ctermfg=15
+hi DiffText             cterm=bold ctermbg=3        ctermfg=8
 
 " ----------------------------------------------------------------------------
 " Syntax Highlighting
