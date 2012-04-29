@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------
 " Vim color file
 " Maintainer:   John-Paul Bader <contact@smyck.org>
-" Last Change:  2012 March
+" Last Change:  2012 April
 " License:      Beer Ware
 " ----------------------------------------------------------------------------
 
@@ -43,13 +43,12 @@ hi DiffAdd              cterm=bold ctermbg=2        ctermfg=15
 hi DiffChange           cterm=bold ctermbg=4        ctermfg=15
 hi DiffDelete           cterm=bold ctermbg=1        ctermfg=15
 hi DiffText             cterm=bold ctermbg=3        ctermfg=8
-hi MatchParen           cterm=none ctermbg=6        ctermbg=15      gui=none        guibg=#2EB5C1   guifg=#F7F7F7
-hi CursorLine           cterm=underline ctermbg=0   ctermbg=none    gui=none        guibg=#424242
+hi MatchParen           cterm=none ctermbg=6        ctermfg=15      gui=none        guibg=#2EB5C1   guifg=#F7F7F7
+hi CursorLine           cterm=none ctermbg=238      ctermfg=none    gui=none        guibg=#424242
 
 " ----------------------------------------------------------------------------
 " Syntax Highlighting
 " ----------------------------------------------------------------------------
-" Universelle Einstellungen
 hi Keyword              cterm=none ctermbg=none ctermfg=10          gui=none        guifg=#D1FA71
 hi Comment              cterm=none ctermbg=none ctermfg=8           gui=none        guifg=#8F8F8F
 hi Delimiter            cterm=none ctermbg=none ctermfg=15          gui=none        guifg=#F7F7F7
