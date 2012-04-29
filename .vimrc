@@ -42,6 +42,9 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Highlight characters behind the 80 chars margin
 :au BufWinEnter * let w:m2=matchadd('ColumnMargin', '\%>80v.\+', -1)
 
+" Disable code folding
+set nofoldenable
+
 " Directories for swp files
 set backupdir=~/.vimbackup
 set directory=~/.vimbackup
