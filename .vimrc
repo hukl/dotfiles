@@ -39,6 +39,13 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+" Search related settings
+set incsearch
+set hlsearch
+
+" Map Ctrl+l to clear highlighted searches
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
 " Highlight characters behind the 80 chars margin
 :au BufWinEnter * let w:m2=matchadd('ColumnMargin', '\%>80v.\+', -1)
 
