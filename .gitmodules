@@ -31,4 +31,10 @@
         path = .vim/bundle/vimerl
         url = https://github.com/jimenezrick/vimerl.git
 
+[submodule ".vim/bundle/markdown"]
+        path = .vim/bundle/vim-markdown
+        url = https://github.com/tpope/vim-markdown.git
 
+[submodule ".vim/bundle/syntastic"]
+        path = .vim/bundle/syntastic
+        url = https://github.com/scrooloose/syntastic.git
