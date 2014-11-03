@@ -3,7 +3,7 @@ defscrollback 4000
 
 # Create initial windows
 screen -t home 0
-screen -t workspace 2 bash -c "cd ~/workspace; bash"
+screen -t log 2 bash -c "cd /var/log; bash"
 
 ## escape
 #escape ``
