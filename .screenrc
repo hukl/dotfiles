@@ -20,3 +20,5 @@ caption string '%{= wk}[ %{k}%H %{k}][%= %{= wk}%?%-Lw%?%{r}(%{r}%n*%f%t%?(%u)%?
  
 bindkey -k k5 prev # F5 for previous window
 bindkey -k k6 next # F6 for next window
+
+bell_msg ""
