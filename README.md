@@ -14,7 +14,7 @@ clone the repository to a location of your choice and link .zshrc, vim.rc, .zsh 
 
     mkdir ~/.vimbackup
 
-
+i am leaving out *.git* and *.gitmodules* on purpose right now, since i havent cleaned them up yet.
 
 
 ## Vim
