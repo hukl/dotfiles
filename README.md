@@ -1,8 +1,27 @@
 dotfiles
 ========
 
-Collection of various config files
+Collection of various config files, stolen from hukl, modified to my needs.
+
+## General Setup
+clone the repository to a location of your choice and link .zshrc, vim.rc, .zsh to your home home-directory.
+
+    $DOTILES_DIR = ~/dotfiles
+    ln -s $DOTFILES_DIR/.zsh ~/
+    ln -s $DOTFILES_DIR/.zshrc ~/
+    ln -s $DOTFILES_DIR/.vimrc ~/
+    ln -s $DOTFILES_DIR/.zlogin ~/
+
+    mkdir ~/.vimbackup
+
+
+
 
 ## Vim
 
-run ```git submodule init && git submodule update``` before starting vim
+run ```git submodule init && git submodule update``` before starting vim.
+
+
+## For *sudoers*
+
+in case you want to use `sudo` it is a good idea to do all that again for the root user.
