@@ -6,7 +6,8 @@ Collection of various config files, stolen from hukl, modified to my needs.
 ## General Setup
 clone the repository to a location of your choice and link .zshrc, vim.rc, .zsh to your home home-directory.
 
-    $DOTFILES_DIR = ~/dotfiles
+
+    DOTFILES_DIR="~/dotfiles"
     ln -s $DOTFILES_DIR/.zsh ~/
     ln -s $DOTFILES_DIR/.zshrc ~/
     ln -s $DOTFILES_DIR/.vimrc ~/
