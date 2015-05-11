@@ -15,7 +15,7 @@ clone the repository to a location of your choice and link .zshrc, vim.rc, .zsh 
     ln -s $DOTFILES_DIR/.zlogin ~/
     mkdir ~/.vimbackup
 
-i am leaving out *.git* and *.gitmodules* on purpose right now, since i havent cleaned them up yet.
+i am leaving out *.git* and *.gitmodules* on purpose right now, since i haven't cleaned them up yet.
 
 
 ## Vim
