@@ -1,3 +1,7 @@
+" tell vim that my iTerm Terminal is capable of 256 colors even when running
+" inside tmux
+set t_Co=256
+
 set nocompatible
 
 " Initialize Pathogen
