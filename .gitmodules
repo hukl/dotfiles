@@ -42,3 +42,6 @@
 [submodule ".vim/bundle/JavaScript-Indent"]
         path = .vim/bundle/JavaScript-Indent
         url = https://github.com/vim-scripts/JavaScript-Indent.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
