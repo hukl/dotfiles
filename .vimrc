@@ -40,6 +40,9 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
+" Close window if last remaining window is NerdTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " Search related settings
 set incsearch
 set hlsearch
@@ -52,10 +55,6 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Disable code folding
 set nofoldenable
-
-" Directories for swp files
-set backupdir=~/.vimbackup
-set directory=~/.vimbackup
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
