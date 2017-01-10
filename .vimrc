@@ -83,3 +83,6 @@ let g:ctrlp_custom_ignore = {
 
 let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
 let g:erlangHighlightErrors = 1
+
+" Use Ag instead of Ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
