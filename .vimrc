@@ -86,3 +86,7 @@ let g:erlangHighlightErrors = 1
 
 " Use Ag instead of Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Disable Swap and Backup Files
+set noswapfile
+set nobackup
