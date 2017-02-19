@@ -23,10 +23,6 @@
         path = .vim/bundle/supertab
         url = https://github.com/ervandew/supertab.git
 
-[submodule ".vim/bundle/vimerl"]
-        path = .vim/bundle/vimerl
-        url = https://github.com/jimenezrick/vimerl.git
-
 [submodule ".vim/bundle/markdown"]
         path = .vim/bundle/vim-markdown
         url = https://github.com/tpope/vim-markdown.git
