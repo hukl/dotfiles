@@ -14,6 +14,12 @@ color smyck
 " Add line numbers
 set number
 set ruler
+set cursorline
+
+" Disable Backup and Swap files
+set noswapfile
+set nobackup
+set nowritebackup
 
 " Set encoding
 set encoding=utf-8
@@ -60,11 +66,28 @@ set nofoldenable
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
+" Enable Syntastic
+let g:syntastic_check_on_open=1
+
+" Use dedicated syntax checkers for these languages
+let g:syntastic_mode_map = {
+    \ "mode": "active",
+    \ "passive_filetypes": ["go", "erlang"] }
+
+" Ignorde JS files on CTAGS generation
+let g:vim_tags_ignore_files = ['.gitignore', '.svnignore', '.cvsignore', '*.js', '*.json', '*.css']
+
 " make uses real tabs
 au FileType make set noexpandtab
 
 " Erlang uses 4 spaces
 au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
+
+" Go uses tabs
+au FileType go set noexpandtab tabstop=4 shiftwidth=4
+
+" Go Foo
+let g:go_fmt_command = "goimports"
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
@@ -84,12 +107,7 @@ let g:ctrlp_custom_ignore = {
 let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
 let g:erlangHighlightErrors = 1
 
-" Go Settings
-let g:go_fmt_command = "goimports"
 
 " Use Ag instead of Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-" Disable Swap and Backup Files
-set noswapfile
-set nobackup
