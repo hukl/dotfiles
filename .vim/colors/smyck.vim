@@ -45,7 +45,8 @@ hi DiffChange           cterm=bold ctermbg=4        ctermfg=15
 hi DiffDelete           cterm=bold ctermbg=1        ctermfg=15
 hi DiffText             cterm=bold ctermbg=3        ctermfg=8
 hi MatchParen           cterm=none ctermbg=6        ctermfg=15      gui=none        guibg=#2EB5C1   guifg=#F7F7F7
-hi CursorLine           cterm=none ctermbg=238      ctermfg=none    gui=none        guibg=#424242
+hi CursorLine           cterm=none ctermbg=238      ctermfg=none    gui=none        guibg=#242424
+hi CursorLineNr         cterm=none ctermbg=238      ctermfg=none    gui=none                        guifg=#FFE377
 hi CursorColumn         cterm=none ctermbg=238      ctermfg=none    gui=none        guibg=#424242
 hi Title                cterm=none ctermbg=none     ctermfg=4       gui=none                        guifg=#88CCE7
 
