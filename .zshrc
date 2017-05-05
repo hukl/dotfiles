@@ -12,7 +12,8 @@ compinit -i
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
 
 # Go Path related exports
 export GOPATH=~/Projekte/Go

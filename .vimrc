@@ -68,11 +68,12 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " Enable Syntastic
 let g:syntastic_check_on_open=1
+let g:syntastic_go_checkers = ['go']
 
 " Use dedicated syntax checkers for these languages
 let g:syntastic_mode_map = {
     \ "mode": "active",
-    \ "passive_filetypes": ["go", "erlang"] }
+    \ "passive_filetypes": ["erlang"] }
 
 " Ignorde JS files on CTAGS generation
 let g:vim_tags_ignore_files = ['.gitignore', '.svnignore', '.cvsignore', '*.js', '*.json', '*.css']
