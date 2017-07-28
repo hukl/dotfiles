@@ -94,4 +94,8 @@ hi link rubyInterpolation     Interpolation
 hi link rubyInterpolationDelimiter    Interpolation
 hi link rubyRailsMethod       Method
 
-
+" GitGutter
+hi link GitGutterAdd          Keyword
+hi link GitGutterChange       String
+hi link GitGutterDelete       Symbol
+hi link GitGutterChangeDelete Identifier

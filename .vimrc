@@ -112,3 +112,6 @@ let g:erlangHighlightErrors = 1
 " Use Ag instead of Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
+" Gitgutter
+let g:gitgutter_sign_column_always = 1
+set updatetime=250
