@@ -26,9 +26,9 @@ set encoding=utf-8
 
 " Whitespace stuff
 set nowrap
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 " Show trailing spaces and highlight hard tabs
@@ -69,6 +69,7 @@ map <Leader>n :NERDTreeToggle<CR>
 " Enable Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_go_checkers = ['go']
+let g:syntastic_javascript_checkers=['eslint']
 
 " Use dedicated syntax checkers for these languages
 let g:syntastic_mode_map = {
@@ -81,8 +82,8 @@ let g:vim_tags_ignore_files = ['.gitignore', '.svnignore', '.cvsignore', '*.js',
 " make uses real tabs
 au FileType make set noexpandtab
 
-" Erlang uses 4 spaces
-au FileType erlang set softtabstop=4 tabstop=4 shiftwidth=4
+" Ruby uses 2 spaces
+au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
 
 " Go uses tabs
 au FileType go set noexpandtab tabstop=4 shiftwidth=4
@@ -104,9 +105,6 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.eunit$',
   \ 'file': '\.exe$\|\.so$\|\.dll\|\.beam$\|\.DS_Store$'
   \ }
-
-let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
-let g:erlangHighlightErrors = 1
 
 
 " Use Ag instead of Ack
