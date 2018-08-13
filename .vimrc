@@ -69,7 +69,7 @@ map <Leader>n :NERDTreeToggle<CR>
 " Enable Syntastic
 let g:syntastic_check_on_open=1
 let g:syntastic_go_checkers = ['go']
-let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Use dedicated syntax checkers for these languages
 let g:syntastic_mode_map = {
@@ -99,6 +99,7 @@ au BufNewFile,BufRead *.json set ft=javascript
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+au FileType ruby   set softtabstop=2 tabstop=2 shiftwidth=2
 
 " ctrp custom ignores
 let g:ctrlp_custom_ignore = {
