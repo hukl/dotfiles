@@ -7,10 +7,6 @@
         path = .vim/bundle/ack.vim
         url = https://github.com/mileszs/ack.vim.git
 
-[submodule ".vim/bundle/delimitMate"]
-        path = .vim/bundle/delimitMate
-        url = https://github.com/Raimondi/delimitMate.git
-
 [submodule ".vim/bundle/nerdcommenter"]
         path = .vim/bundle/nerdcommenter
         url = https://github.com/scrooloose/nerdcommenter.git
@@ -22,49 +18,33 @@
 [submodule ".vim/bundle/supertab"]
         path = .vim/bundle/supertab
         url = https://github.com/ervandew/supertab.git
-
-[submodule ".vim/bundle/markdown"]
-        path = .vim/bundle/vim-markdown
-        url = https://github.com/tpope/vim-markdown.git
-
-[submodule ".vim/bundle/syntastic"]
-        path = .vim/bundle/syntastic
-        url = https://github.com/scrooloose/syntastic.git
-
-[submodule ".vim/bundle/vim-javascript-syntax"]
-        path = .vim/bundle/vim-javascript-syntax
-        url = https://github.com/jelera/vim-javascript-syntax.git
-
-[submodule ".vim/bundle/JavaScript-Indent"]
-        path = .vim/bundle/JavaScript-Indent
-        url = https://github.com/vim-scripts/JavaScript-Indent.git
 [submodule ".vim/bundle/ctrlp.vim"]
-	path = .vim/bundle/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
+    path = .vim/bundle/ctrlp.vim
+    url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule ".vim/bundle/vim-erlang-compiler"]
-	path = .vim/bundle/vim-erlang-compiler
-	url = https://github.com/vim-erlang/vim-erlang-compiler.git
+    path = .vim/bundle/vim-erlang-compiler
+    url = https://github.com/vim-erlang/vim-erlang-compiler.git
 [submodule ".vim/bundle/vim-go"]
-	path = .vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
+    path = .vim/bundle/vim-go
+    url = https://github.com/fatih/vim-go.git
 [submodule ".vim/bundle/vim-gitgutter"]
-	path = .vim/bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
+    path = .vim/bundle/vim-gitgutter
+    url = https://github.com/airblade/vim-gitgutter.git
 [submodule ".vim/bundle/auto-pairs"]
-	path = .vim/bundle/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs.git
+    path = .vim/bundle/auto-pairs
+    url = https://github.com/jiangmiao/auto-pairs.git
 [submodule ".vim/bundle/ale"]
-	path = .vim/bundle/ale
-	url = https://github.com/w0rp/ale
+    path = .vim/bundle/ale
+    url = https://github.com/w0rp/ale
 [submodule ".vim/bundle/lightline.vim"]
-	path = .vim/bundle/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
+    path = .vim/bundle/lightline.vim
+    url = https://github.com/itchyny/lightline.vim
 [submodule ".vim/bundle/lightline-ale"]
-	path = .vim/bundle/lightline-ale
-	url = https://github.com/maximbaz/lightline-ale
+    path = .vim/bundle/lightline-ale
+    url = https://github.com/maximbaz/lightline-ale
 [submodule ".vim/bundle/vim-polyglot"]
-	path = .vim/bundle/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot
+    path = .vim/bundle/vim-polyglot
+    url = https://github.com/sheerun/vim-polyglot
 [submodule ".vim/bundle/vim-gutentags"]
-	path = .vim/bundle/vim-gutentags
-	url = https://github.com/ludovicchabant/vim-gutentags
+    path = .vim/bundle/vim-gutentags
+    url = https://github.com/ludovicchabant/vim-gutentags
