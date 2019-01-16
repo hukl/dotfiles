@@ -62,19 +62,26 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " Disable code folding
 set nofoldenable
 
+" Always show status bar
+set laststatus=2
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
-" Enable Syntastic
-let g:syntastic_check_on_open=1
-let g:syntastic_go_checkers = ['go']
-let g:syntastic_javascript_checkers = ['eslint']
 
-" Use dedicated syntax checkers for these languages
-let g:syntastic_mode_map = {
-    \ "mode": "active",
-    \ "passive_filetypes": ["erlang"] }
+" Always show ALE Gutter
+let g:ale_sign_column_always = 1
+
+" No bgcolor for ALE SignColumn
+highlight clear SignColumn
+
+" ALE Linting Settings
+" Erlang linting done via https://github.com/ten0s/syntaxerl
+" Download/Build it and put it in your $PATH
+let g:ale_linters = {
+\   'erlang': ['syntaxerl'],
+\}
 
 " Ignorde JS files on CTAGS generation
 let g:vim_tags_ignore_files = ['.gitignore', '.svnignore', '.cvsignore', '*.js', '*.json', '*.css']
@@ -112,5 +119,26 @@ let g:ctrlp_custom_ignore = {
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Gitgutter
-let g:gitgutter_sign_column_always = 1
 set updatetime=250
+
+" lightline / Ale
+
+let g:lightline = {}
+
+let g:lightline.component_expand = {
+      \  'linter_checking': 'lightline#ale#checking',
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_checking': 'left',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \     'linter_ok': 'left',
+      \ }
+
+
+let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
+
