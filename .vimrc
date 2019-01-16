@@ -31,6 +31,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" Disable Mode Display because Status line is on
+set noshowmode
+
 " Show trailing spaces and highlight hard tabs
 set list listchars=tab:»·,trail:·
 
@@ -123,7 +126,9 @@ set updatetime=250
 
 " lightline / Ale
 
-let g:lightline = {}
+let g:lightline = {
+      \ 'colorscheme': 'smyck'
+\}
 
 let g:lightline.component_expand = {
       \  'linter_checking': 'lightline#ale#checking',
