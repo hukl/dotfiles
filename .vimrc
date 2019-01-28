@@ -84,6 +84,7 @@ highlight clear SignColumn
 " Download/Build it and put it in your $PATH
 let g:ale_linters = {
 \   'erlang': ['syntaxerl'],
+\   'javascript': ['eslint'],
 \}
 
 " Ignorde JS files on CTAGS generation
@@ -145,5 +146,5 @@ let g:lightline.component_type = {
       \ }
 
 
-let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
+let g:lightline.active = { 'right': [['filetype'],[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
 
