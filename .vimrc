@@ -4,6 +4,9 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" Set fzf runtime
+set rtp+=/usr/local/opt/fzf
+
 " Enable syntax highlighting
 syntax on
 filetype plugin indent on
@@ -76,6 +79,8 @@ map <Leader>n :NERDTreeToggle<CR>
 " Always show ALE Gutter
 let g:ale_sign_column_always = 1
 
+let g:ale_elixir_elixir_ls_release = '/usr/local/src/elixir-ls/rel'
+
 " No bgcolor for ALE SignColumn
 highlight clear SignColumn
 
@@ -84,6 +89,7 @@ highlight clear SignColumn
 " Download/Build it and put it in your $PATH
 let g:ale_linters = {
 \   'erlang': ['syntaxerl'],
+\   'elixir': ['elixir-ls'],
 \   'javascript': ['eslint'],
 \}
 
