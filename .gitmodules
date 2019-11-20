@@ -14,9 +14,6 @@
 [submodule ".vim/bundle/supertab"]
     path = .vim/bundle/supertab
     url = https://github.com/ervandew/supertab.git
-[submodule ".vim/bundle/ctrlp.vim"]
-    path = .vim/bundle/ctrlp.vim
-    url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule ".vim/bundle/vim-erlang-compiler"]
     path = .vim/bundle/vim-erlang-compiler
     url = https://github.com/vim-erlang/vim-erlang-compiler.git
@@ -47,3 +44,6 @@
 [submodule ".vim/bundle/closetag"]
 	path = .vim/bundle/closetag
 	url = https://github.com/docunext/closetag.vim
+[submodule ".vim/bundle/fzf.vim"]
+	path = .vim/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
