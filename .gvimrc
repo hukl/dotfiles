@@ -3,3 +3,4 @@ set gcr=n-v-c:block-Cursor/block-Cursor-blinkon0,i-ci:hor20-Cursor-blinkwait2000
 
 " Hide Toolbar from MacVim
 set guioptions-=T
+autocmd! GUIEnter * set vb t_vb=

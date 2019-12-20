@@ -63,6 +63,9 @@ set hlsearch
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <silent> <C-p> :<C-u>Files<CR><C-p>
 
+map <leader>d :ALEGoToDefinition<CR>
+map <leader>r :ALEFindReferences<CR>
+
 " Highlight characters behind the 80 chars margin
 :au BufWinEnter * let w:m2=matchadd('ColumnMargin', '\%>80v.\+', -1)
 
@@ -120,9 +123,6 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 au FileType ruby   set softtabstop=2 tabstop=2 shiftwidth=2
 
 
-" Use Ag instead of Ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
 " Gitgutter
 set updatetime=250
 
@@ -149,3 +149,37 @@ let g:lightline.component_type = {
 
 let g:lightline.active = { 'right': [['filetype'],[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
 
+command! -bang -nargs=? -complete=dir Files
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+
+" Similarly, we can apply it to fzf#vim#grep. To use ripgrep instead of ag:
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
+
+
+let s:test_colors = [
+    \ '#616e64', '#0d0a79',
+    \ '#6d610d', '#0a7373',
+    \ '#690d0a', '#6d696e',
+    \ '#0d0a6f', '#616e0d',
+    \ '#0a6479', '#6d0d0a',
+    \ '#617373', '#0d0a69',
+    \ '#6d690d', '#0a6e6f',
+    \ '#610d0a', '#6e6479',
+    \]
+
+let g:terminal_ansi_colors = [
+    \ '#616e64', '#0d0a79',
+    \ '#6d610d', '#0a7373',
+    \ '#690d0a', '#6d696e',
+    \ '#0d0a6f', '#616e0d',
+    \ '#0a6479', '#6d0d0a',
+    \ '#617373', '#0d0a69',
+    \ '#6d690d', '#0a6e6f',
+    \ '#610d0a', '#6e6479',
+    \]

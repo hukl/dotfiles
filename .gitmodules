@@ -2,9 +2,6 @@
 [submodule ".vim/bundle/pathogen"]
     path = .vim/bundle/vim-pathogen
     url = https://github.com/tpope/vim-pathogen.git
-[submodule ".vim/bundle/ack.vim"]
-    path = .vim/bundle/ack.vim
-    url = https://github.com/mileszs/ack.vim.git
 [submodule ".vim/bundle/nerdcommenter"]
     path = .vim/bundle/nerdcommenter
     url = https://github.com/scrooloose/nerdcommenter.git
@@ -47,3 +44,6 @@
 [submodule ".vim/bundle/fzf.vim"]
 	path = .vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
