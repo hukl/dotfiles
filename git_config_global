@@ -1,0 +1,32 @@
+[core]
+        repositoryformatversion = 0
+        bare = false
+        logallrefupdates = true
+[merge]
+        ff = false
+	summary = true
+[gitflow "prefix"]
+        feature = feature/
+        release = release/
+        hotfix = hotfix/
+        versiontag = v
+        support = support/
+[user]
+#	name = Max Mustermann
+#	email = max.mustermann@mail.de
+[branch "master"]
+	mergeoptions = --no-ff
+[branch "develop"]
+	mergeoptions = --no-ff
+[color]
+	ui = true
+[gui]
+	spellingdictionary = en
+[branch]
+	autosetuprebase = always
+[push]
+	default = current
+[alias]
+	# define alias
+	# tree to print branch tree on command line
+	tree = log --oneline --decorate --color --graph
