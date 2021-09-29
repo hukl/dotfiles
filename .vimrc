@@ -5,7 +5,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " Set fzf runtime
-set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
 
 " Enable syntax highlighting
 syntax on
@@ -82,8 +82,7 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " Always show ALE Gutter
 let g:ale_sign_column_always = 1
-
-let g:ale_elixir_elixir_ls_release = '/usr/local/src/elixir-ls/rel'
+let g:ale_elixir_elixir_ls_release = expand("~/src/elixir-ls/rel")
 
 " No bgcolor for ALE SignColumn
 highlight clear SignColumn

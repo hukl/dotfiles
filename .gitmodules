@@ -35,9 +35,6 @@
 [submodule ".vim/bundle/vim-polyglot"]
     path = .vim/bundle/vim-polyglot
     url = https://github.com/sheerun/vim-polyglot
-[submodule ".vim/bundle/vim-gutentags"]
-    path = .vim/bundle/vim-gutentags
-    url = https://github.com/ludovicchabant/vim-gutentags
 [submodule ".vim/bundle/closetag"]
 	path = .vim/bundle/closetag
 	url = https://github.com/docunext/closetag.vim
