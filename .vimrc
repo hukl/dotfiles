@@ -1,8 +1,21 @@
 set nocompatible
 
-" Initialize Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+set shortmess=I
+
+call plug#begin()
+Plug 'dense-analysis/ale'
+Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
+Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
+Plug 'alvan/vim-closetag'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-fugitive'
+call plug#end()
 
 " Set fzf runtime
 set rtp+=/opt/homebrew/opt/fzf
@@ -159,6 +172,7 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
+nnoremap <silent> <Leader>f :Rg!<CR>
 
 let s:test_colors = [
     \ '#616e64', '#0d0a79',
