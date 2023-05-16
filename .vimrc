@@ -130,9 +130,13 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set f
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
+" make various elixir related files highlight correctly
+au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
+
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
-au FileType ruby   set softtabstop=2 tabstop=2 shiftwidth=2
+au FileType python     set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+au FileType ruby       set softtabstop=2 tabstop=2 shiftwidth=2
+au FileType javascript set softtabstop=2 tabstop=2 shiftwidth=2
 
 
 " Gitgutter

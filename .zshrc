@@ -19,6 +19,9 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export GOPATH=~/Projekte/Go
 export PATH=$PATH:$GOPATH/bin
 
+# Disable Google Analytics for Homebrew
+export HOMEBREW_NO_GOOGLE_ANALYTICS=1
+
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
