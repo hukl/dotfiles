@@ -1,0 +1,24 @@
+#scrollback 
+defscrollback 4000
+
+# Create initial windows
+screen -t home 0
+screen -t log 2 bash -c "cd /var/log; bash"
+
+## escape
+#escape ``
+
+# Enable mouse scrolling, hopefully
+# http://stackoverflow.com/questions/359109/using-the-scrollwheel-in-gnu-screen
+termcapinfo xterm* ti@:te@
+
+
+# these lines add a white control bar showing the currently open sessions, their names and make it possible to switch between them with F5 and F6
+# http://liquidat.wordpress.com/2008/10/17/short-tip-gnu-screen-with-proper-scroll-session-management-support/
+caption always # activates window caption
+caption string '%{= wk}[ %{k}%H %{k}][%= %{= wk}%?%-Lw%?%{r}(%{r}%n*%f%t%?(%u)%?%{r})%{k}%?%+Lw%?%?%= %{k}][%{b} %d/%m %{k}%c %{k}]' # good looking window bar
+ 
+bindkey -k k5 prev # F5 for previous window
+bindkey -k k6 next # F6 for next window
+
+bell_msg ""
